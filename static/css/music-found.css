@@ -1,0 +1,32 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap"); */
+
+#songInfoBox{
+    width: 70%;
+    height: 35%;
+    display: flex;
+    border: 2px solid #003566;
+}
+
+#songInfoBox img{
+    height: 100%;
+    border-right: 2px solid #003566;
+}
+
+#songInfoBox div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 25px;
+    background: rgba(0, 0, 0, .2);
+    width: 100%;
+}
+
+#songInfoBox .label{
+    font-size: 20px;
+    color: #003566;
+    font-weight: 700;
+}
+
+#songInfoBox .search-content{
+    font-size: 18px;
+}

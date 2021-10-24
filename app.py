@@ -8,7 +8,7 @@ def index():
 
 @app.route('/music-found')
 def music_found():
-    return render_template('search-completed.html')
+    return render_template('music-found.html')
 
 if __name__ == '__main__':
     app.run(debug=True)

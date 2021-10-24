@@ -1,0 +1,33 @@
+{% extends "base.html" %} 
+
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='/css/music-found.css') }}">
+<title>Music Found</title>
+{% endblock %} 
+
+{% block body %}
+<div id="songInfoBox">
+  <img src="{{ url_for('static', filename='/images/undraw_mello.svg') }}" alt="Image cover" />
+  <div>
+    <p>
+      <span class="label">Song:</span>
+      <span class="search-content">song_title</span>
+    </p>
+    <p>
+      <span class="label">Artist:</span>
+      <span class="search-content">song_artist</span>
+    </p>
+    <p>
+      <span class="label">Description:</span>
+      <span class="search-content">song_description</span>
+    </p>
+  </div>
+</div>
+
+<div id="songLinks">
+  <a href=""> </a>
+  <a href=""> </a>
+  <a href=""> </a>
+  <a href=""> </a>
+</div>
+{% endblock %}

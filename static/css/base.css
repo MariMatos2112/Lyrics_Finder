@@ -62,11 +62,6 @@ nav div button:focus {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  background: url("/static/images/undraw_mello.svg") no-repeat;
-  background-size: 40%;
-  background-position-x: 6%;
-  background-position-y: bottom;
 }
 
 footer {
