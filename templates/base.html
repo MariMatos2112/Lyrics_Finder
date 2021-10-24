@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+    <!-- <title>Document</title> -->
+    {% block head %} {% endblock %}
+  </head>
+
+  <body>
+    <nav>
+      <span id="logo">
+        <span>Lyrics</span><span>Finder</span>
+      </span>
+      <div>
+        <a href="#">About</a>
+        <a href="#">Creator</a>
+        <button id="changeBg">Change Background</button>
+      </div>
+    </nav>
+
+    <div id="mainBox">
+    {% block body %} {% endblock %}
+    </div>
+    <footer>
+        <p>Designed, Created and Implemented by <a href="#">Marianne Matos - MM</a></p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+  </body>
+</html>
+

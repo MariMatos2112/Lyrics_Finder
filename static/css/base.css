@@ -1,0 +1,94 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+nav {
+  height: 12vh;
+  background: #001d3d;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+}
+
+#logo {
+  font-size: 30px;
+  font-weight: 700;
+  font-style: italic;
+  text-transform: uppercase;
+  cursor: default;
+}
+
+#logo span:first-of-type {
+  color: #ffd60a;
+}
+
+#logo span:last-of-type {
+  color: #fff;
+  text-decoration: line-through;
+}
+
+nav div a,
+nav div button {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 700;
+  margin-left: 20px;
+  transition: all 0.2s;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+nav div a:hover,
+nav div button:hover {
+  color: #ffd60a;
+  text-decoration: underline;
+}
+
+nav div button:focus {
+  outline: none;
+}
+
+#mainBox {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: url("/static/images/undraw_mello.svg") no-repeat;
+  background-size: 40%;
+  background-position-x: 6%;
+  background-position-y: bottom;
+}
+
+footer {
+  height: 8vh;
+  background: #001d3d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+  cursor: default;
+}
+
+footer:hover {
+  font-weight: 700;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap");
+
+form{
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+}
+
+form input[type=text]{
+    width: 80%;
+    padding: 10px 20px;
+    font-size: 20px;
+    border: 3px dashed #001d3d;
+    color: #001d3d
+}
+
+form input[type=text]:focus,
+form input[type=submit]:focus{
+    outline: none;
+}
+
+form input[type=text]:hover{
+    border-style: solid;
+}
+
+form input[type=submit]{
+    padding: 10px 40px;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 700;
+    background: #FFD60A;
+    color: #001d3d;
+    border: 3px dashed #001d3d;
+    transition: all .2s;
+}
+
+form input[type=submit]:hover{
+    background: #001d3d;
+    border: 3px solid #001d3d;
+    color: #FFD60A;
+}
