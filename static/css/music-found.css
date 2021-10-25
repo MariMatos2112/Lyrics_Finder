@@ -1,15 +1,25 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap"); */
+#mainBox{
+  background: url("/static/images/unsplash-bg-white.jpg") no-repeat;
+  background-size: 100% 100%;
+}
 
 #songInfoBox{
     width: 70%;
-    height: 35%;
+    height: 38%;
     display: flex;
-    border: 2px solid #003566;
+    box-shadow: 2px 2px 6px #00356688;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    background: #ffffffaa;
+    transition: all .2s;
+}
+
+#songInfoBox:hover{
+    background: #ffffffdd;
 }
 
 #songInfoBox img{
     height: 100%;
-    border-right: 2px solid #003566;
 }
 
 #songInfoBox div{
@@ -17,16 +27,40 @@
     flex-direction: column;
     justify-content: space-around;
     padding-left: 25px;
-    background: rgba(0, 0, 0, .2);
+    font-size: 18px;
     width: 100%;
 }
 
 #songInfoBox .label{
-    font-size: 20px;
     color: #003566;
     font-weight: 700;
 }
 
-#songInfoBox .search-content{
-    font-size: 18px;
+#songLinks{
+    width: 80%;
+    height: 28%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 20px;
+}
+
+#songLinks a{
+    width: 23%;
+    height: 90%;
+    transition: all .2s;
+    filter: grayscale(1);
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, .3);
+    border: 2px solid #ffd60a;
+}
+
+#songLinks a:hover{
+    margin-bottom: 10px;
+    filter: grayscale(0);
+    box-shadow: 5px 5px 12px rgba(0, 0, 0, .2);
+}
+
+#songLinks img{
+    width: 100%;
+    height: 100%;
 }
