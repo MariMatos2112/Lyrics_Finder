@@ -1,4 +1,5 @@
 from flask import Flask, render_template, redirect, url_for, request
+from main import search_song
 
 app = Flask(__name__)
 
@@ -13,8 +14,8 @@ def index():
 @app.route('/music-found')
 def music_found():
     user_input = request.args.get('user_input')
-    print(user_input)
-    return render_template('music-found.html')
+    song_data = search_song(user_input)
+    return render_template('music-found.html', song_data=song_data)
 
 if __name__ == '__main__':
     app.run(debug=True)

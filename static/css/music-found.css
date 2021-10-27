@@ -26,7 +26,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding-left: 25px;
+    padding: 1% 25px;
     font-size: 18px;
     width: 100%;
 }
@@ -34,6 +34,10 @@
 #songInfoBox .label{
     color: #003566;
     font-weight: 700;
+}
+
+#songInfoBox .search-content{
+    font-size: 16px;
 }
 
 #songLinks{

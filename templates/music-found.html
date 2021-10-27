@@ -7,27 +7,27 @@
 
 {% block body %}
 <div id="songInfoBox">
-  <img src="{{ url_for('static', filename='/images/undraw_mello.svg') }}" alt="Image cover" />
+  <img src={{ song_data[0].img }} alt="Image cover" />
   <div>
     <p>
-      <span class="label">Song:</span>
-      <span class="search-content">song_title</span>
+      <span class="label">Song: </span>
+      <span class="search-content">{{ song_data[0].song }}</span>
     </p>
     <p>
       <span class="label">Artist:</span>
-      <span class="search-content">song_artist</span>
+      <span class="search-content">{{ song_data[0].artist }}</span>
     </p>
     <p>
       <span class="label">Description:</span>
-      <span class="search-content">song_description</span>
+      <span class="search-content">{{ song_data[0].description }}</span>
     </p>
   </div>
 </div>
 
 <div id="songLinks">
-  <a href=""><img src="{{ url_for('static', filename='/images/genius-box.png') }}" alt="Genius logo"></a>
-  <a href=""><img src="{{ url_for('static', filename='/images/vagalume-box.png') }}" alt="Vagalume logo"></a>
-  <a href=""><img src="{{ url_for('static', filename='/images/letras-box.png') }}" alt="Letras logo"></a>
-  <a href=""><img src="{{ url_for('static', filename='/images/az-box.png') }}" alt="AZ Lyrics logo"></a>
+  <a href=http://{{ song_data[1].genius }} target="_blank"><img src="{{ url_for('static', filename='/images/genius-box.png') }}" alt="Genius logo"></a>
+  <a href=http://{{ song_data[1].vagalume }} target="_blank"><img src="{{ url_for('static', filename='/images/vagalume-box.png') }}" alt="Vagalume logo"></a>
+  <a href=http://{{ song_data[1].letras }} target="_blank"><img src="{{ url_for('static', filename='/images/letras-box.png') }}" alt="Letras logo"></a>
+  <a href=http://{{ song_data[1].az }} target="_blank"><img src="{{ url_for('static', filename='/images/az-box.png') }}" alt="AZ Lyrics logo"></a>
 </div>
 {% endblock %}
