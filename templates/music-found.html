@@ -6,22 +6,27 @@
 {% endblock %} 
 
 {% block body %}
-<div id="songInfoBox">
-  <img src={{ song_data[0].img }} alt="Image cover" />
-  <div>
-    <p>
-      <span class="label">Song: </span>
-      <span class="search-content">{{ song_data[0].song }}</span>
-    </p>
-    <p>
-      <span class="label">Artist:</span>
-      <span class="search-content">{{ song_data[0].artist }}</span>
-    </p>
-    <p>
-      <span class="label">Description:</span>
-      <span class="search-content">{{ song_data[0].description }}</span>
-    </p>
+    <a href="/" id="searchAgain">Search another song</a>
   </div>
+</nav>
+
+<div id="mainBox">
+  <div id="songInfoBox">
+    <img src={{ song_data[0].img }} alt="Image cover" />
+    <div>
+      <p>
+        <span class="label">Song: </span>
+        <span class="search-content">{{ song_data[0].song }}</span>
+      </p>
+      <p>
+        <span class="label">Artist:</span>
+        <span class="search-content">{{ song_data[0].artist }}</span>
+      </p>
+      <p>
+        <span class="label">Description:</span>
+        <span class="search-content">{{ song_data[0].description }}</span>
+      </p>
+    </div>
 </div>
 
 <div id="songLinks">

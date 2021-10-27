@@ -59,6 +59,8 @@ def search_song(user_input):
     middle_index = title.find('–')
     song_info['song'] = title[middle_index + 2:]
     song_info['artist'] = title[:middle_index - 1].replace('\xa0', ' ')
-    song_info['description'] = main_content.find('meta', property='og:description')['content'].replace('\n\n', ' ')
+    unformatted_description = main_content.find('meta', property='og:description')['content'].replace('\n\n', ' ')
+    if unformatted_description.endswith('.') or unformatted_description.endswith('!') or unformatted_description.endswith('...') or unformatted_description.endswith('?'): song_info['description'] = unformatted_description
+    else: song_info['description'] = f'{unformatted_description}...'
 
     return [song_info, links]
