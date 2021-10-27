@@ -15,4 +15,12 @@
     <input name="user_song" type="text" placeholder="Type your song here..." required>
     <input type="submit" value="Search">
   </form>
+
+  <div id="modal">
+    <p class="appear01">We're searching your song ;)</p>
+    <img class="appear01" src="{{ url_for('static', filename='/images/undraw_Web_search.svg') }}" alt="Web search icon">
+
+    <p class="appear02">Almost done...</p>
+    <img class="appear02" src="{{ url_for('static', filename='/images/undraw_Completed.svg') }}" alt="Completed task icon">
+  </div>
 {% endblock %}
