@@ -1,0 +1,74 @@
+#mainBox {
+  flex-direction: row;
+  background: url("/static/images/creator-bg1.png") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.photosBox {
+  width: 35%;
+  position: relative;
+  height: 90%;
+}
+
+.photosBox img:first-of-type {
+  position: absolute;
+  top: 0;
+  right: 5%;
+  height: 65%;
+  z-index: 1;
+}
+
+.photosBox img:nth-of-type(2) {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  height: 65%;
+}
+
+.photosBox img:nth-of-type(3) {
+  position: absolute;
+  bottom: 0;
+  right: 22%;
+  height: 65%;
+}
+
+.photosBox img{
+    transition: all 0.75s ease-out;
+}
+
+.photosBox img:hover{
+    z-index: 2;
+}
+
+.textBox {
+  width: 40%;
+  height: 80%;
+  padding-left: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.textBox p {
+  margin-bottom: 10px;
+  text-align: justify;
+  color: #000814;
+}
+
+p a {
+  font-weight: 700;
+  transition: all 0.2s;
+  cursor: pointer;
+  text-decoration: none;
+  color: #000814;
+}
+
+p a:hover {
+  color: #003566;
+  text-decoration: underline;
+}
+
+p .socialMedia:hover {
+  color: #ffc300;
+}

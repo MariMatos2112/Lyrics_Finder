@@ -17,5 +17,9 @@ def music_found():
     song_data = search_song(user_input)
     return render_template('music-found.html', song_data=song_data)
 
+@app.route('/creator')
+def creator():
+    return render_template('creator.html')
+
 if __name__ == '__main__':
     app.run(debug=True)

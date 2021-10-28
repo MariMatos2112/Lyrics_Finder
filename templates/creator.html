@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/creator.css') }}">
+<title>Creator</title>
+{% endblock %}
+
+{% block body %}
+    <button id="changeBg">Change Background</button>
+  </div>
+</nav>
+
+<div id="mainBox">
+    <div class="photosBox">
+        <img src="{{ url_for('static', filename='images/creator-photo1.jpg') }}" alt="Creator photo 01">
+        <img src="{{ url_for('static', filename='images/creator-photo2.jpg') }}" alt="Creator photo 02">
+        <img src="{{ url_for('static', filename='images/creator-photo3.jpg') }}" alt="Creator photo 03">
+    </div>
+    <div class="textBox">
+        <p>Hi, I'm Marianne, but please, call me Mari ;)</p>
+        <p>I'm not so good at talking about myself, but I think this simple phrase (that's also my bio on GitHub) can describe me pretty well: "I'm just a girl who's passionate about living and learning new things."</p>
+        <p>Yeah, sometimes I can be very inspirational, I know, but I think I'll just leave my coach job and embrace the coding thing hahah</p>
+        <p>I'm deeply involved with technology, especially programming, because I think it's just fantastic to build new things and understand how they are made and how the parts work together to construct the whole.</p>
+        <p>I can do some cool stuff on <a href="https://www.javascript.com/" target="_blank">JavaScript</a>, <a href="https://pt-br.reactjs.org/" target="_blank">React</a>, <a href="https://pt.wikipedia.org/wiki/HTML5" target="_blank">HTML5</a>, <a href="https://www.w3.org/Style/CSS/Overview.en.html" target="_blank">CSS3</a> and <a href="https://www.python.org/" target="_blank">Python</a>, but I'll let you judge my little art.</p>
+        <p>If you wanna take a look at my creations, go check my repositories on <a class="socialMedia" href="https://github.com/MariMatos2112" target="_blank">GitHub</a>.</p>
+        <p>And one last thing, I'm into social media detox, so you'll probably find me just on <a class="socialMedia" href="https://www.linkedin.com/in/marianne-matos-pereira/" target="_blank">LinkedIn</a> or e-mail (mariannematos784@gmail.com).</p>
+    </div>
+{% endblock %}
