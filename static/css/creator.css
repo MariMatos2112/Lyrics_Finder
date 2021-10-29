@@ -11,34 +11,35 @@
   height: 90%;
 }
 
-.photosBox img:first-of-type {
+.photosBox img {
   position: absolute;
+  height: 65%;
+  filter: grayscale(1);
+  transition: all .3s;
+  border: 2px solid #001d3d;
+}
+
+.photosBox img:first-of-type {
   top: 0;
   right: 5%;
-  height: 65%;
   z-index: 1;
 }
 
 .photosBox img:nth-of-type(2) {
-  position: absolute;
   top: 10%;
   left: 0;
-  height: 65%;
 }
 
 .photosBox img:nth-of-type(3) {
-  position: absolute;
   bottom: 0;
   right: 22%;
-  height: 65%;
 }
 
-.photosBox img{
-    transition: all 0.75s ease-out;
-}
-
-.photosBox img:hover{
-    z-index: 2;
+.photosBox img:hover {
+  z-index: 2;
+  filter: grayscale(0);
+  border-color: #ffd60a;
+  height: 68%;
 }
 
 .textBox {
@@ -71,4 +72,8 @@ p a:hover {
 
 p .socialMedia:hover {
   color: #ffc300;
+}
+
+p span{
+  font-weight: 700;
 }
