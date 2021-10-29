@@ -46,7 +46,7 @@ def search_song(user_input):
                 if links['vagalume'] == '': find_links({'link': link, 'final_link_index': 44, 'search_link': '<a href="/url?q=https://www.vagalume.com.br/', 'end_string': 'html', 'link_links': 'vagalume', 'string_end_plus_index': 4})
 
             if page == google_pages[2]:
-                if links['letras'] == '': find_links({'link': link, 'final_link_index': 42, 'search_link': '<a href="/url?q=https://www.letras.mus.br/', 'end_string': 'html', 'link_links': 'letras', 'string_end_plus_index': 4})
+                if links['letras'] == '': find_links({'link': link, 'final_link_index': 42, 'search_link': '<a href="/url?q=https://www.letras.mus.br/', 'end_string': '&amp', 'link_links': 'letras', 'string_end_plus_index': 0})
 
             if page == google_pages[3]:
                 if links['az'] == '': find_links({'link': link, 'final_link_index': 41, 'search_link': '<a href="/url?q=https://www.azlyrics.com/', 'end_string': 'html', 'link_links': 'az', 'string_end_plus_index': 4})
