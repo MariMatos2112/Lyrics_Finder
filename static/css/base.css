@@ -23,6 +23,8 @@ nav {
   font-style: italic;
   text-transform: uppercase;
   cursor: default;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 #logo span:first-of-type {
@@ -80,11 +82,12 @@ footer:hover {
   font-weight: 700;
 }
 
-footer a {
+footer .creatorLink {
   color: #fff;
   text-decoration: none;
 }
 
-footer a:hover {
+footer .creatorLink:hover {
   text-decoration: underline;
+  color: #fff;
 }

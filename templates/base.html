@@ -10,16 +10,16 @@
 
   <body>
     <nav>
-      <span id="logo">
+      <a id="logo" href="/">
         <span>Lyrics</span><span>Finder</span>
-      </span>
+      </a>
       <div>
         <a href="#">About</a>
         <a href="/creator">Creator</a>
     {% block body %} {% endblock %}
     </div>
     <footer>
-        <p>Designed, Created and Implemented by <a href="#">Marianne Matos - MM</a></p>
+        <p>Designed, Created and Implemented by <a href="/creator" class="creatorLink">Marianne Matos - MM</a></p>
     </footer>
 
     <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
