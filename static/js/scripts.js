@@ -67,9 +67,11 @@ if (btnSubmit) {
 }
 
 const nextSlide = () => {
-  if (slideCounter < sliderImages.length - 1) slideCounter++;
-  else slideCounter = 0;
-  imgSlider.src = sliderImages[slideCounter].imgSource;
+  if (imgSlider) {
+    if (slideCounter < sliderImages.length - 1) slideCounter++;
+    else slideCounter = 0;
+    imgSlider.src = sliderImages[slideCounter].imgSource;
+  }
 };
 
 const intervalID = setInterval(() => {

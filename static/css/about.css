@@ -58,3 +58,40 @@
   width: 90%;
   height: 90%;
 }
+
+@media (max-width: 1024px) {
+  .textBox {
+    font-size: 18px;
+  }
+
+  .slider .arrowIcon {
+    display: none;
+  }
+}
+
+@media (max-width: 540px) {
+  #mainBox {
+    flex-direction: column-reverse;
+    height: 100%;
+    padding: 8% 0;
+  }
+
+  .textBox {
+    width: 80%;
+    margin-bottom: 5%;
+  }
+
+  .slider {
+    width: 60%;
+  }
+}
+
+@media (max-width: 415px) {
+  .textBox {
+    font-size: 16px;
+  }
+
+  .slider {
+    width: 70%;
+  }
+}

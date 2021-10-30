@@ -1,0 +1,1 @@
+#1: When you press the Seach button on the Main Page without anything on it, the JS happens but the music_found page doesn't load because the input is required.

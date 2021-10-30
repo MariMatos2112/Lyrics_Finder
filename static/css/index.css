@@ -49,9 +49,9 @@ form input[type="submit"]:hover {
   color: #ffd60a;
 }
 
-#modal{
+#modal {
   position: absolute;
-  background: #E8E8E8;
+  background: #e8e8e8;
   width: 100%;
   height: 80%;
   flex-direction: column;
@@ -60,18 +60,62 @@ form input[type="submit"]:hover {
   display: none;
 }
 
-#modal p{
+#modal p {
   font-size: 30px;
   color: #001d3d;
   font-weight: 700;
   margin-bottom: 15px;
 }
 
-#modal img{
+#modal img {
   height: 50%;
   margin-top: 15px;
 }
 
-#modal .appear02{
+#modal .appear02 {
   display: none;
+}
+
+@media (max-width: 1024px) {
+  #mainBox {
+    background-size: 60%;
+  }
+
+  form {
+    width: 80%;
+  }
+
+  form input[type="text"],
+  form input[type="submit"] {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 540px){
+  #mainBox{
+    padding-top: 30%;
+    justify-content: flex-start;
+  }
+
+  form{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  form input[type="text"]{
+    width: 100%;
+    font-size: 20px;
+  }
+
+  form input[type="submit"]{
+    width: 50%;
+    font-size: 20px;
+    margin-top: 25px;
+  }
+}
+
+@media (max-width: 414px){
+  #mainBox{
+    background-size: 80%;
+  }
 }
