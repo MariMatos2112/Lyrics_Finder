@@ -91,31 +91,49 @@ form input[type="submit"]:hover {
   }
 }
 
-@media (max-width: 540px){
-  #mainBox{
+@media (max-width: 540px) {
+  #mainBox {
     padding-top: 30%;
     justify-content: flex-start;
   }
 
-  form{
+  form {
     flex-direction: column;
     align-items: center;
   }
 
-  form input[type="text"]{
+  form input[type="text"] {
     width: 100%;
     font-size: 20px;
   }
 
-  form input[type="submit"]{
+  form input[type="submit"] {
     width: 50%;
     font-size: 20px;
     margin-top: 25px;
   }
+
+  #modal {
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    padding: 0 5%;
+    text-align: center;
+  }
+
+  #modal p {
+    margin-bottom: 0;
+    margin-top: 20px;
+  }
+
+  #modal img {
+    width: 60%;
+  }
 }
 
-@media (max-width: 414px){
-  #mainBox{
+@media (max-width: 414px) {
+  #mainBox {
     background-size: 80%;
   }
 }
