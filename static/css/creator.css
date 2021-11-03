@@ -77,3 +77,30 @@ p .socialMedia:hover {
 p span{
   font-weight: 700;
 }
+
+@media (max-width: 1024px){
+  .photosBox{
+    height: 50%;
+    margin-left: 5%;
+  }
+
+  .textBox{
+    width: 45%;
+  }
+}
+
+@media (max-width: 540px){
+  #mainBox{
+    flex-direction: column-reverse;
+    height: 100%;
+    padding: 8% 0;
+  }
+
+  .textBox{
+    width: 80%;
+  }
+
+  .photosBox{
+    display: none;
+  }
+}
