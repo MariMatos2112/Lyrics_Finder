@@ -76,6 +76,8 @@ footer {
   color: #fff;
   text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
   cursor: default;
+  text-align: center;
+  padding: 0 10%;
 }
 
 footer:hover {
@@ -90,4 +92,28 @@ footer .creatorLink {
 footer .creatorLink:hover {
   text-decoration: underline;
   color: #fff;
+}
+
+@media (max-width: 700px){
+  #searchAgain{
+    display: none;
+  }
+}
+
+@media (max-width: 650px){
+  nav{
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  #logo{
+    margin-bottom: 5px;
+  }
+}
+
+@media (max-width: 425px){
+  nav{
+    height: 16vh;
+  }
 }
