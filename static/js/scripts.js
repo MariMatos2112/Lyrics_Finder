@@ -1,4 +1,5 @@
 const btnChangeBg = document.getElementById("changeBg");
+const inputSearch = document.querySelector("input[type=text]")
 const btnSubmit = document.querySelector("input[type=submit]");
 const btnPreviousPic = document.getElementById("leftArrow");
 const btnNextPic = document.getElementById("rightArrow");
@@ -53,16 +54,18 @@ if (btnChangeBg) {
 
 if (btnSubmit) {
   btnSubmit.addEventListener("click", () => {
-    divModalBox.style.display = "flex";
+    if (inputSearch.value !== ''){
+      divModalBox.style.display = "flex";
 
-    setTimeout(() => {
-      arrayClassAppear01.forEach((element) => {
-        element.style.display = "none";
-      });
-      arrayClassAppear02.forEach((element) => {
-        element.style.display = "flex";
-      });
-    }, 4000);
+      setTimeout(() => {
+        arrayClassAppear01.forEach((element) => {
+          element.style.display = "none";
+        });
+        arrayClassAppear02.forEach((element) => {
+          element.style.display = "flex";
+        });
+      }, 4000);
+    }
   });
 }
 
